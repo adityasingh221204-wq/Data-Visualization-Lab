@@ -1,0 +1,8 @@
+Home Owner Rate = 
+DIVIDE(
+    CALCULATE(
+        COUNTROWS('AdventureWorks Customer Lookup'), 
+        'AdventureWorks Customer Lookup'[HomeOwner] = "Y"
+    ),
+    COUNTROWS('AdventureWorks Customer Lookup')
+)
