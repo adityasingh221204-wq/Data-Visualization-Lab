@@ -3,11 +3,6 @@
 # 📊 DV Lab 2 — Final Dashboard
 ### Interactive Power BI Report | Customer Intelligence Dashboard
 
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![DAX](https://img.shields.io/badge/DAX-1F3864?style=for-the-badge)
-![Status](https://img.shields.io/badge/status-complete-2ea44f?style=for-the-badge)
-![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
-
 *Experiment No. 02 — Designing Interactive Reports to Visualise Tabular, Categorical, Trend-based and Geographical Data using Microsoft Power BI Desktop*
 
 </div>
@@ -173,39 +168,3 @@ RANKX(
 
 ---
 
-## 🚀 How to Open
-
-1. Clone / download this repo
-2. Open **`DV_Lab_2_Final_Dashboard.pbix`** in Power BI Desktop (2023+ recommended)
-3. Go to **Page 2 ("Final Dashboard")** and **Page 3 ("Trends & Correlation")** to see the new work
-4. Use the slicers at the bottom of Page 2 to filter the whole page
-
----
-
-## 🛠️ Tech Stack
-
-`Power BI Desktop` · `DAX` · `Power Query (M)` · `AdventureWorks sample dataset`
-
----
-
-## 📄 Files in this Repo
-
-```
-├── DV_Lab_2_Final_Dashboard.pbix   # Power BI report file
-├── DV_Lab_2_Report.docx            # Full lab report (Word)
-├── DV_Lab_2_Report.pdf             # Full lab report (PDF)
-├── README.md                       # You are here
-└── assets/                         # Chart previews used in this README
-```
-
----
-
-## 👤 Author
-
-**[Your Name]** — [Roll No. / PRN] · Data Visualisation Laboratory, AY 2025–26
-
----
-
-<div align="center">
-<sub>Built with Power BI Desktop as part of the Data Visualisation Lab coursework.</sub>
-</div>
