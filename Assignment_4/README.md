@@ -6,7 +6,6 @@
 [![Power BI](https://img.shields.io/badge/Power%20BI-Desktop-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
 [![DAX](https://img.shields.io/badge/DAX-Measures-2563EB?style=for-the-badge)](#-dax-measures)
 [![Power Query](https://img.shields.io/badge/Power%20Query-M-10B981?style=for-the-badge)](#-power-query-m-transformation)
-[![License](https://img.shields.io/badge/License-MIT-64748B?style=for-the-badge)](#-license)
 
 *A single-page, fully interactive sales dashboard built from raw CSV to click-through report — covering 9,994 orders across four years of US retail data.*
 
@@ -36,10 +35,6 @@
 - [DAX Measures](#-dax-measures)
 - [Dashboard Visuals](#-dashboard-visuals)
 - [Key Insights](#-key-insights)
-- [Repository Structure](#-repository-structure)
-- [How to Reproduce](#-how-to-reproduce)
-- [FAQ](#-faq)
-- [License](#-license)
 
 </details>
 
@@ -211,66 +206,5 @@ YTD Sales        = TOTALYTD([Total Sales], 'Date'[Date])
 - 👥 With 793 unique customers over 5,009 orders, the average customer places **~6.3 orders**, each averaging **~$459**.
 
 ---
-
-## 📁 Repository Structure
-
-```
-.
-├── README.md                          ← you are here
-├── Sales_Analysis_Dashboard_Report.docx   ← submittable write-up
-├── Power_Query_M_Script.txt           ← paste into Advanced Editor
-├── DAX_Measures.txt                   ← paste into Power BI measures
-├── Sample_-_Superstore.csv            ← source data
-└── assets/
-    ├── dashboard_hero.png
-    ├── chart_category.png
-    ├── chart_trend.png
-    ├── chart_region.png
-    └── chart_top_products.png
-```
-
----
-
-## 🚀 How to Reproduce
-
-1. Open **Power BI Desktop** → `Get Data → Text/CSV` → select `Sample_-_Superstore.csv`.
-2. In the query editor, open **Advanced Editor** and paste the contents of [`Power_Query_M_Script.txt`](Power_Query_M_Script.txt) (update the file path first).
-3. `Close & Apply`, then build a **Date table** (`New Table`) and mark it as a Date table under *Table tools*.
-4. Relate `Date[Date]` (1) → `Orders[Order Date]` (\*).
-5. Create each measure from [`DAX_Measures.txt`](DAX_Measures.txt) via `New Measure`.
-6. Build the report page: 4 KPI cards → clustered column (Category) → line chart (Month) → donut (Region) → bar chart (Top 10 Products, filtered) → 3 slicers (Order Date, Region, Category).
-7. Format currency on Sales/Profit visuals, apply one consistent accent color, and you're done.
-
----
-
-## ❓ FAQ
-
-<details>
-<summary><b>Why isn't there a <code>.pbix</code> file in this repo?</b></summary>
-<br>
-<code>.pbix</code> is a proprietary Power BI Desktop binary — it can only be produced by the Power BI Desktop application itself. This repo instead ships everything needed to rebuild the exact model and report in a few minutes: the M script, the DAX measures, validated numbers, and the layout spec above.
-</details>
-
-<details>
-<summary><b>Can I use a different dataset?</b></summary>
-<br>
-Yes — the M script and DAX measures are written against the standard Superstore column names (<code>Sales</code>, <code>Profit</code>, <code>Order ID</code>, <code>Customer ID</code>, <code>Category</code>, <code>Region</code>, <code>Order Date</code>). Any dataset with equivalent columns will work with minimal changes to the source step.
-</details>
-
-<details>
-<summary><b>Why use a Measure instead of a Calculated Column for Total Sales?</b></summary>
-<br>
-A Measure is evaluated dynamically in the current filter context (e.g. whatever a slicer selects) and isn't stored in the model, making it the correct choice for aggregations. A Calculated Column is computed row-by-row and physically stored, which is wasteful for something like a running total.
-</details>
-
----
-
-## 📄 License
-
-Released under the [MIT License](LICENSE). Sample Superstore is a publicly available demo dataset commonly used for BI training.
-
-<div align="center">
-
-*Built with Power BI · Power Query · DAX*
 
 </div>
