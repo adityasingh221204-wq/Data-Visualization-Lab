@@ -1,8 +1,4 @@
-// ============================================================
-// Power Query (M) — Sample Superstore import & cleaning
-// Paste into: Home > Advanced Editor (on a new Blank Query)
-// Update the file path in the first line before running.
-// ============================================================
+
 let
     Source = Csv.Document(
         File.Contents("C:\Path\To\Sample_-_Superstore.csv"),
@@ -57,9 +53,3 @@ let
 in
     #"Reordered Columns"
 
-// ------------------------------------------------------------
-// Rename this query "Orders" after loading.
-// Then: Modeling > New Table (or Power Query) to build a
-// continuous Date table, mark it as a Date Table, and relate
-// Date[Date] (1) -> Orders[Order Date] (*).
-// ------------------------------------------------------------
