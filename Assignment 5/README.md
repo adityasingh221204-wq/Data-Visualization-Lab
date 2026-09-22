@@ -169,40 +169,6 @@ Home → Get Data → Excel Workbook → Select file
 
 ## 🖥️ Power BI Dashboard
 
-### Dashboard Theme
-A **custom JSON theme** (`PG_Grievance_theme.json`) was applied to maintain visual consistency:
-- **Primary colour:** Deep government-blue palette
-- **Accent colour:** Amber/gold for pending/warning indicators
-- **Background:** Dark navy with white card panels
-- **Font:** Consistent hierarchy — Title → Section Heading → KPI → Chart label
-- **Style:** Formal analytical / public policy theme
-
-### Dashboard Layout
-
-```
-┌────────────────────────────────────────────────────────────────┐
-│          📊 India Grievance Redressal Dashboard                │
-│          Source: CPGRAMS / PG Portal | 2026                    │
-├────────────────────────────────────────────────────────────────┤
-│  [KPI: Total Received]  [KPI: Total Disposed]  [KPI: Disposal%]│
-│         [KPI: Total Pending]    [KPI: Aged Pending]            │
-├─────────────────────────────┬──────────────────────────────────┤
-│  Bar Chart:                 │  Map:                            │
-│  Top 15 Orgs by Received    │  State-Wise Disposal Rate        │
-│                             │  (Choropleth / Bubble Map)       │
-├─────────────────────────────┼──────────────────────────────────┤
-│  Stacked Bar:               │  Donut Chart:                    │
-│  Pending Aging Buckets      │  Pending Breakdown               │
-│  (0-60 / 60-180 / 180-365)  │  (0-60d vs 60-180d vs 180-365d) │
-├─────────────────────────────┴──────────────────────────────────┤
-│  Table: State-Wise Detail (Sortable, with conditional format)   │
-├────────────────────────────────────────────────────────────────┤
-│  🔍 Slicers: State/UT Filter | Organization Filter             │
-├────────────────────────────────────────────────────────────────┤
-│  💡 Key Insights Panel (Text Box with Narrative)               │
-└────────────────────────────────────────────────────────────────┘
-```
-
 ### Visualizations Used
 
 | # | Visual Type | Data Used | Purpose |
@@ -304,26 +270,6 @@ India's CPGRAMS system receives **hundreds of thousands of citizen grievances** 
 
 ---
 
-## 🧪 Experiment Objectives & Outcomes
-
-### Objectives (from Lab Manual)
-- [x] Identify a suitable real-world dataset and formulate meaningful analytical questions
-- [x] Perform basic data cleaning, transformation, and preparation for visualization
-- [x] Select appropriate charts and visual representations based on the nature of data
-- [x] Apply data storytelling principles to communicate insights effectively
-- [x] Develop an interactive dashboard containing multiple coordinated visualizations
-- [x] Apply dashboard theming, formatting, layout, and visual hierarchy techniques
-- [x] Interpret the results and communicate actionable insights derived from the dashboard
-
-### Outcomes Achieved
-- [x] Prepared and organized a real-world dataset (CPGRAMS) for visualization
-- [x] Selected and implemented 9+ suitable visualizations for different analytical requirements
-- [x] Developed a coherent data story (Context → Overview → Exploration → Insight → Action)
-- [x] Applied dashboard layout, formatting, filtering, and theming techniques with custom JSON theme
-- [x] Presented insights and recommendations supported by visual evidence
-
----
-
 ## 📚 Theory Summary
 
 ### Data Storytelling
@@ -356,43 +302,4 @@ Data  +  Visualization  +  Narrative  →  Insight
 
 ---
 
-## 🛠️ Tools & Software Used
 
-| Tool | Version | Purpose |
-|------|---------|---------|
-| **Microsoft Power BI Desktop** | Latest (2026) | Dashboard creation, DAX, theming |
-| **Microsoft Excel** | Microsoft 365 | Data cleaning and helper column formulas |
-| **PG Portal / CPGRAMS** | — | Data source |
-| **Custom JSON Theme** | `PG_Grievance_theme.json` | Dashboard visual consistency |
-
----
-
-## 📝 Assignment Questions (from Lab Manual)
-
-1. Explain the concept of data storytelling. Describe the role of data, visualization, and narrative in communicating insights effectively.
-2. Differentiate between data visualization and data storytelling. Explain how storytelling adds value to a dashboard.
-3. Explain the importance of selecting an appropriate visualization for a given analytical question. Give suitable examples for comparison, trend, distribution, relationship, and part-to-whole analysis.
-4. What is a dashboard? Explain the essential characteristics of an effective and user-friendly dashboard.
-5. What is visual hierarchy? Explain how size, position, colour, contrast, and whitespace can be used to establish visual hierarchy in a dashboard.
-
----
-
-## 👨‍🎓 Student Information
-
-| Field | Details |
-|-------|---------|
-| **Course** | Data Visualization Lab |
-| **Course Code** | TE7663 |
-| **Semester** | V |
-| **Academic Year** | 2026–2027 |
-| **Practical No.** | 5 |
-| **Submission Date** | 28 September 2026 |
-
----
-
-<div align="center">
-
-*Dashboard built with ❤️ using Microsoft Power BI Desktop*  
-*Data Source: CPGRAMS / PG Portal, Government of India*
-
-</div>
